@@ -6,12 +6,16 @@ public class GrabInteractable : XRGrabInteractable
 {
     public string interactableID;
 
-    void Awake()
-        => InteractableRegistry.Register(interactableID, gameObject);
+    void Start()
+    {
+        Debug.Log($"注册物体 ID: {interactableID}");
+        InteractableRegistry.Register(interactableID, gameObject);
+    }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
-        base.OnSelectEntered(args); // 保留原有抓取物理行为
+        base.OnSelectEntered(args);
+        Debug.Log($"物体被抓取，触发ID: {interactableID}");
         GameEvents.TriggerInteractionComplete(interactableID);
     }
 }

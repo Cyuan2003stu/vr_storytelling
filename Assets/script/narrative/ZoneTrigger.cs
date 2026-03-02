@@ -4,7 +4,7 @@ public class ZoneTrigger : MonoBehaviour
 {
     public string zoneID; // InspectorÀïÌî "zone_door"
 
-    void Awake()
+    void Start()
         => InteractableRegistry.Register(zoneID, gameObject);
 
     void OnTriggerEnter(Collider other)
