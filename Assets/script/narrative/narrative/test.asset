@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: test
   m_EditorClassIdentifier: 
   timeline: {fileID: 11400000, guid: ef343090c3f122d4e9c0cda070de5aa0, type: 2}
-  completionType: 0
+  completionType: 1
   interactableID: 
   triggerZoneID: 

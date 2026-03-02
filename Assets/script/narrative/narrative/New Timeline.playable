@@ -233,11 +233,11 @@ MonoBehaviour:
   - {fileID: 8363902825362459525}
   - {fileID: 8425376503273172904}
   - {fileID: -5072543139025172409}
-  m_FixedDuration: 0
+  m_FixedDuration: 10.45
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
-  m_DurationMode: 0
+  m_DurationMode: 1
   m_MarkerTrack: {fileID: 0}
 --- !u!114 &3934981899637044836
 MonoBehaviour:
@@ -301,10 +301,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 0.55
-    m_ClipIn: 8.133333333333335
+    m_Start: 0
+    m_ClipIn: 101.38333333333333
     m_Asset: {fileID: 3934981899637044836}
-    m_Duration: 131.70013605442182
+    m_Duration: 10.05
     m_TimeScale: 1
     m_ParentTrack: {fileID: 8425376503273172904}
     m_EaseInDuration: 0

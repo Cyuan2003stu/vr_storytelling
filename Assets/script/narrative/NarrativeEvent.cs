@@ -59,7 +59,7 @@ public class NarrativeEvent : ScriptableObject
         Debug.Log($"[Event] 收到交互ID: {id}，等待的ID: {interactableID}");
         if (id != interactableID) return;
         GameEvents.OnInteractionComplete -= WaitForGrab;
-        InteractableRegistry.SetActive(interactableID, false);
+        // InteractableRegistry.SetActive(interactableID, false); // 不隐藏物体
         Debug.Log("[Event] 抓取完成，进入下一个Event");
         onComplete?.Invoke();
     }
