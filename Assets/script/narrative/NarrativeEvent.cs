@@ -10,11 +10,14 @@ public class NarrativeEvent : ScriptableObject
     [Header("完成条件")]
     public CompletionType completionType;
 
-    [Header("交互物体（抓取类）")]
+    [Header("抓取类")]
     public string interactableID;
 
     [Header("区域触发类")]
     public string triggerZoneID;
+
+    [Header("放置类")]
+    public string placementZoneID;
 
     private System.Action onComplete;
 
@@ -22,6 +25,13 @@ public class NarrativeEvent : ScriptableObject
     {
         onComplete = callback;
         Debug.Log($"[Event] Begin 被调用，完成条件: {completionType}");
+
+        // WaitForPlace 不提前播Timeline，直接进入等待
+        if (completionType == CompletionType.WaitForPlace)
+        {
+            OnTimelineFinished();
+            return;
+        }
 
         if (timeline != null)
             TimelineManager.Instance.Play(timeline, OnTimelineFinished);
@@ -51,6 +61,12 @@ public class NarrativeEvent : ScriptableObject
                 InteractableRegistry.SetActive(triggerZoneID, true);
                 GameEvents.OnInteractionComplete += WaitForZone;
                 break;
+
+            case CompletionType.WaitForPlace:
+                Debug.Log($"[Event] 开始等待放置到区域ID: {placementZoneID}");
+                InteractableRegistry.SetActive(placementZoneID, true);
+                GameEvents.OnInteractionComplete += WaitForPlace;
+                break;
         }
     }
 
@@ -59,7 +75,6 @@ public class NarrativeEvent : ScriptableObject
         Debug.Log($"[Event] 收到交互ID: {id}，等待的ID: {interactableID}");
         if (id != interactableID) return;
         GameEvents.OnInteractionComplete -= WaitForGrab;
-        // InteractableRegistry.SetActive(interactableID, false); // 不隐藏物体
         Debug.Log("[Event] 抓取完成，进入下一个Event");
         onComplete?.Invoke();
     }
@@ -70,11 +85,30 @@ public class NarrativeEvent : ScriptableObject
         GameEvents.OnInteractionComplete -= WaitForZone;
         onComplete?.Invoke();
     }
+
+    void WaitForPlace(string id)
+    {
+        Debug.Log($"[Event] 收到放置ID: {id}，等待的ID: {placementZoneID}");
+        if (id != placementZoneID) return;
+        GameEvents.OnInteractionComplete -= WaitForPlace;
+        Debug.Log("[Event] 放置完成，开始播放Timeline");
+
+        // 放置完成后再播放Timeline
+        if (timeline != null)
+            TimelineManager.Instance.Play(timeline, () =>
+            {
+                Debug.Log("[Event] Timeline播放完成，进入下一个Event");
+                onComplete?.Invoke();
+            });
+        else
+            onComplete?.Invoke(); // 没有Timeline直接完成
+    }
 }
 
 public enum CompletionType
 {
     Auto,
     WaitForGrab,
-    WaitForZone
+    WaitForZone,
+    WaitForPlace
 }
