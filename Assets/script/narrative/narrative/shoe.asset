@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d2d4f632b6e0b4e9ccda1483462d76, type: 3}
   m_Name: shoe
   m_EditorClassIdentifier: 
-  timeline: {fileID: 11400000, guid: 5b3225f01e39b1b468799aad2247faec, type: 2}
+  timeline: {fileID: 11400000, guid: 7bf7aef0ea4c8744bb7295c0ad492178, type: 2}
   completionType: 3
   interactableID: 
   triggerZoneID: 
