@@ -2217,6 +2217,7 @@ GameObject:
   - component: {fileID: 435851315}
   - component: {fileID: 435851314}
   - component: {fileID: 435851313}
+  - component: {fileID: 435851316}
   m_Layer: 0
   m_Name: Scene3_Spot Light
   m_TagString: Untagged
@@ -2327,6 +2328,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 307578990}
   m_LocalEulerAnglesHint: {x: 120.75299, y: 8.639008, z: -19.815979}
+--- !u!95 &435851316
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435851312}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &475444153
 GameObject:
   m_ObjectHideFlags: 0
@@ -3511,6 +3534,7 @@ GameObject:
   - component: {fileID: 674901675}
   - component: {fileID: 674901674}
   - component: {fileID: 674901673}
+  - component: {fileID: 674901676}
   m_Layer: 0
   m_Name: Refri_Spot Light
   m_TagString: Untagged
@@ -3621,6 +3645,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 307578990}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!95 &674901676
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674901672}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &706522425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,6 +4295,7 @@ GameObject:
   - component: {fileID: 964461450}
   - component: {fileID: 964461452}
   - component: {fileID: 964461451}
+  - component: {fileID: 964461453}
   m_Layer: 0
   m_Name: Refri_Area Light
   m_TagString: Untagged
@@ -4359,6 +4406,28 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!95 &964461453
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964461449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &998729398
 GameObject:
   m_ObjectHideFlags: 0
@@ -6295,6 +6364,10 @@ PlayableDirector:
     value: {fileID: 1991526764}
   - key: {fileID: -2729283273425058821, guid: 7bf7aef0ea4c8744bb7295c0ad492178, type: 2}
     value: {fileID: 1791940239}
+  - key: {fileID: -2145256982552705446, guid: 7bf7aef0ea4c8744bb7295c0ad492178, type: 2}
+    value: {fileID: 435851316}
+  - key: {fileID: 6900115665560253393, guid: 7bf7aef0ea4c8744bb7295c0ad492178, type: 2}
+    value: {fileID: 1621547317}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1421159782
@@ -6715,6 +6788,7 @@ GameObject:
   - component: {fileID: 1621547314}
   - component: {fileID: 1621547316}
   - component: {fileID: 1621547315}
+  - component: {fileID: 1621547317}
   m_Layer: 0
   m_Name: Scene3_Spot Light (1)
   m_TagString: Untagged
@@ -6825,6 +6899,28 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!95 &1621547317
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621547313}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1627301482
 GameObject:
   m_ObjectHideFlags: 0
