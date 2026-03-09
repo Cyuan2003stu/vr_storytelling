@@ -428,6 +428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato
       objectReference: {fileID: 0}
+    - target: {fileID: 5287713367912859328, guid: 49866ec1029b741468ca8997945363cb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1428,6 +1432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toilet_02
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e78ce1ff460e81d4ca3fdec12fb03882, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e78ce1ff460e81d4ca3fdec12fb03882, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.7
@@ -1446,11 +1454,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e78ce1ff460e81d4ca3fdec12fb03882, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.071885526
+      value: 0.4403
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e78ce1ff460e81d4ca3fdec12fb03882, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.2178545
+      value: 0.3019
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e78ce1ff460e81d4ca3fdec12fb03882, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2270,6 +2278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bread
       objectReference: {fileID: 0}
+    - target: {fileID: 864859062458273505, guid: dbd59d1042fa4e649a177d80fca0c998, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 864859062458503873, guid: dbd59d1042fa4e649a177d80fca0c998, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.3944383
@@ -2630,7 +2642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753955851246280489, guid: a30a1848c63e8504eade6a510775e9d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.34391606
+      value: 0.838
       objectReference: {fileID: 0}
     - target: {fileID: 1753955851246280489, guid: a30a1848c63e8504eade6a510775e9d2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2638,7 +2650,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1753955851246280489, guid: a30a1848c63e8504eade6a510775e9d2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.16585445
+      value: 0.533
       objectReference: {fileID: 0}
     - target: {fileID: 1753955851246280489, guid: a30a1848c63e8504eade6a510775e9d2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4589,6 +4601,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: eade3ab39903b2d4dabf7ac10d07eca5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: eade3ab39903b2d4dabf7ac10d07eca5, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.42
@@ -4671,6 +4687,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apple
       objectReference: {fileID: 0}
+    - target: {fileID: 4663114177116202490, guid: 3faa669cb80455548924ba322fa8e119, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4663114177116568026, guid: 3faa669cb80455548924ba322fa8e119, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.8354087
@@ -4732,6 +4752,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4a8f8260324941148a3a672e6fc70591, type: 3}
       propertyPath: m_Name
       value: InteractiveFurniture10_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4a8f8260324941148a3a672e6fc70591, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4a8f8260324941148a3a672e6fc70591, type: 3}
       propertyPath: m_LocalScale.x
@@ -5629,6 +5653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pizza_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3588707397686656057, guid: 3a6960c4527177a499486b9214574cc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5690,6 +5718,10 @@ PrefabInstance:
     - target: {fileID: 1718937846997711595, guid: 587b4b8e6dbf27a45ba3e9dcaa74a83a, type: 3}
       propertyPath: m_Name
       value: Lamp_06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1718937846997711595, guid: 587b4b8e6dbf27a45ba3e9dcaa74a83a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6305,6 +6337,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ShowerMirror_02
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 21c5cc5e6927a5e40ba1c7b4c29501fc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21c5cc5e6927a5e40ba1c7b4c29501fc, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.21000002
@@ -6319,11 +6355,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21c5cc5e6927a5e40ba1c7b4c29501fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.4660771
+      value: 0.5696
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21c5cc5e6927a5e40ba1c7b4c29501fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.06182933
+      value: 0.5474
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 21c5cc5e6927a5e40ba1c7b4c29501fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6763,6 +6799,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 87f48b93e88f5514fb8e282e7e0d8743, type: 3}
       propertyPath: m_Name
       value: OfficeChair_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 87f48b93e88f5514fb8e282e7e0d8743, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 87f48b93e88f5514fb8e282e7e0d8743, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7566,13 +7606,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoapBottle_01
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e89310a11e7092440b3d6a463c86b92a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e89310a11e7092440b3d6a463c86b92a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.4190771
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e89310a11e7092440b3d6a463c86b92a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.049429297
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e89310a11e7092440b3d6a463c86b92a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8104,6 +8148,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cookie_01
       objectReference: {fileID: 0}
+    - target: {fileID: 3674759381859583435, guid: f9799095e3a911847ac63e05fd0a5171, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8302,13 +8350,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rangehood
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6b5e1d5fd5316db43817143a6c04cb9e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6b5e1d5fd5316db43817143a6c04cb9e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.31706953
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6b5e1d5fd5316db43817143a6c04cb9e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09024525
+      value: 0.751
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6b5e1d5fd5316db43817143a6c04cb9e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -9307,6 +9359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Donut_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6629082968930069041, guid: b98d51fc720522849bc75ff22cc06e59, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6629082968930170385, guid: b98d51fc720522849bc75ff22cc06e59, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.2999463
@@ -9592,6 +9648,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: c372faffdf2aaab4faa1fece6546ce6c, type: 3}
       propertyPath: m_Name
       value: KitchenTabletop1_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c372faffdf2aaab4faa1fece6546ce6c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c372faffdf2aaab4faa1fece6546ce6c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10479,6 +10539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cupcake
       objectReference: {fileID: 0}
+    - target: {fileID: 8972218055460009077, guid: 131cda5f7882eaf40aa8a3d9a0b1edc3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8972218055460235349, guid: 131cda5f7882eaf40aa8a3d9a0b1edc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.7453327
@@ -10873,6 +10937,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cake
       objectReference: {fileID: 0}
+    - target: {fileID: 3381483483517175452, guid: db2dcde823a1cae49ae90c5e5c7ffa47, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10894,6 +10962,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 4fd68ead92071aa40b568a80afdf4d3a, type: 3}
       propertyPath: m_Name
       value: ChristmasLollipop_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4fd68ead92071aa40b568a80afdf4d3a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4fd68ead92071aa40b568a80afdf4d3a, type: 3}
       propertyPath: m_LocalPosition.x
