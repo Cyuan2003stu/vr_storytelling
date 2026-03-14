@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d2d4f632b6e0b4e9ccda1483462d76, type: 3}
   m_Name: MainScene
   m_EditorClassIdentifier: 
-  timeline: {fileID: 0}
-  completionType: 0
+  timeline: {fileID: 11400000, guid: c3e214e2d64b18d41be762d8b6d1bd86, type: 2}
+  completionType: 2
   interactableID: 
-  triggerZoneID: 
-  placementZoneID: MainLight
+  triggerZoneID: 001
+  placementZoneID: 
