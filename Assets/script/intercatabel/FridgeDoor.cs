@@ -7,19 +7,36 @@ public class FridgeDoor : XRBaseInteractable
 {
     [Header("旋转设置")]
     public Transform pivotPoint;
-    public float minAngle = -90f;    // 完全打开
-    public float maxAngle = 0f;      // 完全关闭
+    public float minAngle = -90f;
+    public float maxAngle = 0f;
 
     [Header("关联抽屉")]
     public FridgeDrawer drawer;
+
+    [Header("初始状态")]
+    public bool isLocked = true;     // ← 默认锁定，不能开门
 
     private bool isGrabbed = false;
     private IXRSelectInteractor currentInteractor;
     private float currentAngle = 0f;
     private float grabAngleOffset = 0f;
 
+    // Signal Receiver 里绑定这两个函数
+    public void UnlockDoor()
+    {
+        isLocked = false;
+        Debug.Log("[FridgeDoor] 解锁，可以开门");
+    }
+
+    public void LockDoor()
+    {
+        isLocked = true;
+        Debug.Log("[FridgeDoor] 锁定，不能开门");
+    }
+
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
+        if (isLocked) return;       // ← 锁定时不响应抓取
         base.OnSelectEntered(args);
         isGrabbed = true;
         currentInteractor = args.interactorObject;
@@ -44,8 +61,6 @@ public class FridgeDoor : XRBaseInteractable
             float handAngle = GetAngleFromPivot(handPos);
             float targetAngle = handAngle + grabAngleOffset;
             currentAngle = Mathf.Clamp(targetAngle, minAngle, maxAngle);
-
-            // ← 改成 Y 轴
             pivotPoint.localRotation = Quaternion.Euler(0, currentAngle, 0);
         }
 
@@ -59,7 +74,6 @@ public class FridgeDoor : XRBaseInteractable
     float GetAngleFromPivot(Vector3 position)
     {
         Vector3 direction = position - pivotPoint.position;
-        // ← Y 轴旋转用 X 和 Z 计算角度
         return Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
     }
 }
