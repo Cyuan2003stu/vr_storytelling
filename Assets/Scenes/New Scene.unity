@@ -5728,7 +5728,7 @@ GameObject:
   - component: {fileID: 379800977}
   - component: {fileID: 379800976}
   m_Layer: 0
-  m_Name: ShoeSlot
+  m_Name: shoe_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

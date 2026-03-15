@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeline: {fileID: 11400000, guid: 7bf7aef0ea4c8744bb7295c0ad492178, type: 2}
   completionType: 3
-  interactableID: 555
+  interactableID: 
   triggerZoneID: 
   placementZoneID: 
