@@ -6205,6 +6205,8 @@ PlayableDirector:
     value: {fileID: 187956592}
   - key: {fileID: 5395312922609993271, guid: ef343090c3f122d4e9c0cda070de5aa0, type: 2}
     value: {fileID: 242048346}
+  - key: {fileID: -1312157101228199062, guid: 95bddcea45b04a94786dcc7cec03c647, type: 2}
+    value: {fileID: 201672137}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &464198661
@@ -12392,7 +12394,7 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
-  interactableID: aBottleOf Beer
+  interactableID: aBottleOfBeer
 --- !u!54 &1082903491
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12878,10 +12880,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   events:
-  - {fileID: 11400000, guid: 5c1f97ee2ad056442a6b57fe96168f97, type: 2}
-  - {fileID: 11400000, guid: f57596e7af3741349ac750a712a58560, type: 2}
   - {fileID: 11400000, guid: 1574ee0976a87d4408535ba83cc726e0, type: 2}
   - {fileID: 11400000, guid: 25e9d8e4be3e4d74eaa7ff86ac79a027, type: 2}
+  - {fileID: 11400000, guid: 5c1f97ee2ad056442a6b57fe96168f97, type: 2}
+  - {fileID: 11400000, guid: f57596e7af3741349ac750a712a58560, type: 2}
   - {fileID: 11400000, guid: b8406c314e6bbed40a5eaec3e378d80e, type: 2}
   - {fileID: 11400000, guid: b8406c314e6bbed40a5eaec3e378d80e, type: 2}
 --- !u!1001 &1166117915
@@ -23347,7 +23349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446b2fc0d9468984c8a05f79fa6a5f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoneID: aBottleOf Beer_slot
+  zoneID: aBottleOfBeer_slot
   acceptObjectID: aBottleOfBeer
   snapDistance: 0.2
   lockAfterSnap: 1
