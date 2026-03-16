@@ -6,31 +6,30 @@ public class PlacementZone : MonoBehaviour
 {
     [Header("区域设置")]
     public string zoneID;
-    public string acceptObjectID;       // 接受的物体名字
-    public float snapDistance = 0.2f;   // 吸附距离
+    public string acceptObjectID;
+    public float snapDistance = 0.2f;
 
     [Header("吸附设置")]
-    public bool lockAfterSnap = true;   // 吸附后锁定不能再拿走
+    public bool lockAfterSnap = true;
 
     private bool isOccupied = false;
+    public bool IsOccupied => isOccupied; // ← 外部可以查询
 
     void Start()
     {
         InteractableRegistry.Register(zoneID, gameObject);
+        Debug.Log($"[PlacementZone] 注册区域ID: {zoneID}");
     }
 
     void Update()
     {
         if (isOccupied) return;
 
-        // 在范围内寻找目标物体
         Collider[] colliders = Physics.OverlapSphere(transform.position, snapDistance);
         foreach (var col in colliders)
         {
-            // 检查名字是否匹配
             if (col.gameObject.name != acceptObjectID) continue;
 
-            // 如果物体正在被抓着就不吸附
             var interactable = col.GetComponent<XRBaseInteractable>();
             if (interactable != null && interactable.isSelected) continue;
 
@@ -43,10 +42,9 @@ public class PlacementZone : MonoBehaviour
     {
         isOccupied = true;
 
-        // 完全对齐到 Slot 的位置、旋转、大小
         obj.transform.position = transform.position;
         obj.transform.rotation = transform.rotation;
-        obj.transform.localScale = transform.localScale; // ← 用 Slot 的大小
+        obj.transform.localScale = transform.localScale;
 
         var rb = obj.GetComponent<Rigidbody>();
         if (rb != null)
@@ -70,4 +68,9 @@ public class PlacementZone : MonoBehaviour
             r.enabled = false;
     }
 
+    void OnDrawGizmos()
+    {
+        Gizmos.color = isOccupied ? Color.green : Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, snapDistance);
+    }
 }
