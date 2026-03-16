@@ -2,10 +2,8 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-
 public class PlacementZone : MonoBehaviour
 {
-    public bool IsOccupied => isOccupied;
     [Header("区域设置")]
     public string zoneID;
     public string acceptObjectID;       // 接受的物体名字
@@ -19,7 +17,6 @@ public class PlacementZone : MonoBehaviour
     void Start()
     {
         InteractableRegistry.Register(zoneID, gameObject);
-        Debug.Log($"[PlacementZone] 注册成功: {zoneID}");
     }
 
     void Update()
