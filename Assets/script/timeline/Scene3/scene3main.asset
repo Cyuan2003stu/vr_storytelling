@@ -16,4 +16,4 @@ MonoBehaviour:
   completionType: 3
   interactableID: 
   triggerZoneID: 
-  placementZoneID: shoe_slot
+  placementZoneID: calendar_slot
