@@ -10,13 +10,11 @@ public class InteractableRegistry : MonoBehaviour
     {
         get
         {
-            // 如果没有实例，自动在场景里创建一个
             if (_instance == null)
             {
                 GameObject obj = new GameObject("InteractableRegistry");
                 _instance = obj.AddComponent<InteractableRegistry>();
                 _instance.registry = new Dictionary<string, GameObject>();
-                Debug.Log("InteractableRegistry 自动创建");
             }
             return _instance;
         }
@@ -43,5 +41,19 @@ public class InteractableRegistry : MonoBehaviour
             obj.SetActive(active);
         else
             Debug.LogWarning($"找不到ID: {id}");
+    }
+
+    // 新增：获取 PlacementZone
+    public static PlacementZone GetZone(string id)
+    {
+        if (Instance.registry.TryGetValue(id, out var obj))
+        {
+            Debug.Log($"[Registry] 找到物体: {obj.name}");
+            var zone = obj.GetComponent<PlacementZone>();
+            Debug.Log($"[Registry] PlacementZone: {zone}");
+            return zone;
+        }
+        Debug.LogWarning($"[Registry] 找不到ID: {id}");
+        return null;
     }
 }

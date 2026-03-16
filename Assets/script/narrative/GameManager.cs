@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
         PlayCurrentEvent();
     }
 
+    void Update()
+    {
+        GameEvents.ProcessPendingEvents();
+    }
+
     void PlayCurrentEvent()
     {
         if (currentIndex >= events.Length)
