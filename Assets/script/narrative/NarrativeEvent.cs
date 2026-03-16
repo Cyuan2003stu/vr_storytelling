@@ -26,8 +26,9 @@ public class NarrativeEvent : ScriptableObject
         onComplete = callback;
         Debug.Log($"[Event] Begin 被调用，完成条件: {completionType}");
 
-        // WaitForPlace 不提前播Timeline，直接进入等待
-        if (completionType == CompletionType.WaitForPlace)
+        // 这两种条件都是先等待，再播Timeline
+        if (completionType == CompletionType.WaitForPlace ||
+            completionType == CompletionType.WaitForGrab)
         {
             OnTimelineFinished();
             return;
@@ -75,8 +76,17 @@ public class NarrativeEvent : ScriptableObject
         Debug.Log($"[Event] 收到交互ID: {id}，等待的ID: {interactableID}");
         if (id != interactableID) return;
         GameEvents.OnInteractionComplete -= WaitForGrab;
-        Debug.Log("[Event] 抓取完成，进入下一个Event");
-        onComplete?.Invoke();
+        Debug.Log("[Event] 抓取完成，开始播放Timeline");
+
+        // 抓取完成后再播放Timeline
+        if (timeline != null)
+            TimelineManager.Instance.Play(timeline, () =>
+            {
+                Debug.Log("[Event] Timeline播放完成，进入下一个Event");
+                onComplete?.Invoke();
+            });
+        else
+            onComplete?.Invoke();
     }
 
     void WaitForZone(string id)

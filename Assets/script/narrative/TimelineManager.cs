@@ -15,13 +15,12 @@ public class TimelineManager : MonoBehaviour
 
     public void Play(TimelineAsset timeline, Action onFinish)
     {
-        // 在场景里找所有 PlayableDirector
         PlayableDirector target = null;
         var allDirectors = FindObjectsOfType<PlayableDirector>();
 
         foreach (var d in allDirectors)
         {
-            if (d.playableAsset == timeline)
+            if (d != null && d.playableAsset == timeline)
             {
                 target = d;
                 break;
@@ -36,8 +35,16 @@ public class TimelineManager : MonoBehaviour
         }
 
         Debug.Log($"[TimelineManager] 开始播放: {timeline.name}, duration: {target.duration}");
-        target.playOnAwake = false;
+
+        // 重置触发器
+        var trigger = target.GetComponent<TimelineTrigger>();
+        if (trigger != null)
+            trigger.ResetTriggers();
+
+        target.Stop();
+        target.time = 0;
         target.Play();
+
         StartCoroutine(WaitForEnd(target, onFinish));
     }
 
