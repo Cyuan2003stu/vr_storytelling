@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeline: {fileID: 11400000, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
   completionType: 1
-  interactableID: calendar
+  interactableID: phone
   triggerZoneID: 
   placementZoneID: 
