@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9e978dcd11410aa4b8cc81e43c95e5d0
+guid: 45fa215631e772b48abe64fd7656bc9e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -17,12 +17,11 @@ ModelImporter:
     removeConstantScaleCurves: 0
     motionNodeName: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'S2-1 neighbour_004' has import animation warnings
+    animationImportWarnings: "\nClip 'S3-2 friend1_007' has import animation warnings
       that might lower retargeting quality:\nNote: Activate translation DOF on avatar
       to improve retargeting quality.\n\t'CY_Spine1' has translation animation that
-      will be discarded.\n\t'CY_Head' has translation animation that will be discarded.\n\t'CY_LeftHand'
-      has translation animation that will be discarded.\n\t'CY_RightHand' has translation
-      animation that will be discarded.\n"
+      will be discarded.\n\t'CY_LeftHand' has translation animation that will be
+      discarded.\n\t'CY_RightHand' has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -36,18 +35,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: S2-1 neighbour_004
-      takeName: S2-1 neighbour_004
-      internalID: 94821077960596146
-      firstFrame: 364
-      lastFrame: 3904
+      name: S3-2 friend2_007
+      takeName: S3-2 friend1_007
+      internalID: -6913978091383489341
+      firstFrame: 596
+      lastFrame: 818
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -283,90 +282,90 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: S2-1 neighbour_004(Clone)
+    - name: S3-2 friend1_007 1(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_Hips
-      parentName: S2-1 neighbour_004(Clone)
-      position: {x: 0, y: 0.9514894, z: -0.14882714}
-      rotation: {x: 0.00064678607, y: 0.05431968, z: 0.009221853, w: 0.9984808}
+      parentName: S3-2 friend1_007 1(Clone)
+      position: {x: 0, y: 0.9421319, z: 0}
+      rotation: {x: 0.019961242, y: 0.034131475, z: 0.02165308, w: 0.9989834}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_Spine
       parentName: CY_Hips
       position: {x: -0, y: 0.08311143, z: 0}
-      rotation: {x: -0.02446249, y: -0.00860468, z: 0.0006628668, w: 0.99966353}
+      rotation: {x: -0.07876102, y: 0.0058512297, z: 0.005849338, w: 0.9968592}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_Spine1
       parentName: CY_Spine
-      position: {x: -0.0000009983778, y: 0.2058562, z: -0.0000031515956}
-      rotation: {x: -0.014203704, y: -0.0028676149, z: -0.015972193, w: 0.9997674}
+      position: {x: -0.0000023543835, y: 0.19830263, z: 0.0000065863132}
+      rotation: {x: 0.036576446, y: 0.0019797417, z: -0.01065755, w: 0.9992721}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_Neck
       parentName: CY_Spine1
       position: {x: -0, y: 0.227282, z: 0}
-      rotation: {x: 0.028986758, y: -0.02235575, z: 0.012456731, w: 0.99925214}
+      rotation: {x: -0.037141267, y: -0.046252195, z: -0.035248395, w: 0.9976166}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_Head
       parentName: CY_Neck
       position: {x: -0, y: 0.15710087, z: 0.02027108}
-      rotation: {x: 0.031974483, y: -0.022111451, z: 0.0051732836, w: 0.9992307}
+      rotation: {x: 0.1125489, y: -0.05955986, z: 0.050230805, w: 0.9905868}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftShoulder
       parentName: CY_Spine1
       position: {x: -0.040529907, y: 0.18384308, z: -0.0019246228}
-      rotation: {x: -0.019401472, y: -0.046023868, z: -0.12697102, w: 0.99064815}
+      rotation: {x: -0.040711418, y: -0.04598458, z: -0.10260243, w: 0.9928246}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftArm
       parentName: CY_LeftShoulder
       position: {x: -0.13154894, y: 0, z: 0}
-      rotation: {x: -0.031095743, y: -0.006793945, z: 0.15131281, w: 0.98797333}
+      rotation: {x: 0.08882084, y: 0.04157693, z: 0.14125279, w: 0.98510396}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftForeArm
       parentName: CY_LeftArm
       position: {x: -0.26254898, y: 0, z: 0}
-      rotation: {x: 0.044390783, y: 0.0105789695, z: 0.023004176, w: 0.9986934}
+      rotation: {x: -0.021823423, y: 0.018564196, z: -0.033543427, w: 0.99902654}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftHand
       parentName: CY_LeftForeArm
-      position: {x: -0.28766865, y: -0.000005364418, z: -0.0000020861626}
-      rotation: {x: 0.04454595, y: 0.02525491, z: -0.06413021, w: 0.9966269}
+      position: {x: -0.2920428, y: -0.00000011920929, z: 0.00000029802322}
+      rotation: {x: -0.01976248, y: 0.009858224, z: -0.003907183, w: 0.99974847}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_RightShoulder
       parentName: CY_Spine1
       position: {x: 0.040139988, y: 0.18384308, z: -0.0019246228}
-      rotation: {x: 0.003022667, y: -0.06830019, z: 0.14627244, w: 0.9868791}
+      rotation: {x: -0.027150098, y: -0.07311842, z: 0.14740841, w: 0.98599565}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_RightArm
       parentName: CY_RightShoulder
       position: {x: 0.13154894, y: 0, z: 0}
-      rotation: {x: -0.0023368746, y: 0.05425315, z: -0.12836094, w: 0.9902397}
+      rotation: {x: 0.09539168, y: 0.0053982865, z: -0.17065802, w: 0.980687}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_RightForeArm
       parentName: CY_RightArm
       position: {x: 0.26254898, y: 0, z: 0}
-      rotation: {x: 0.03242686, y: 0.005587974, z: -0.007961966, w: 0.9994268}
+      rotation: {x: -0.035127703, y: -0.008635928, z: 0.029849192, w: 0.99889964}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_RightHand
       parentName: CY_RightForeArm
-      position: {x: 0.2724757, y: 0.000009417534, z: -0.00001719594}
-      rotation: {x: 0.03240129, y: 0.000097577285, z: 0.041403983, w: 0.998617}
+      position: {x: 0.27531946, y: -0.000029206276, z: -0.000010251999}
+      rotation: {x: -0.034595482, y: 0.0066544777, z: -0.042767186, w: 0.99846375}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftUpLeg
       parentName: CY_Hips
       position: {x: -0.101355396, y: 0, z: 0}
-      rotation: {x: 0.05661613, y: 0.0073498907, z: 0.0021337876, w: 0.9983667}
+      rotation: {x: 0.0073210187, y: 0.02297864, z: -0.0074063367, w: 0.9996817}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftLeg
       parentName: CY_LeftUpLeg
       position: {x: -0, y: -0.48397723, z: 0}
-      rotation: {x: 0.011060483, y: 0.030398652, z: 0.011718475, w: 0.999408}
+      rotation: {x: 0.026593812, y: 0.06955145, z: 0.009968031, w: 0.997174}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftFoot
       parentName: CY_LeftLeg
       position: {x: -0, y: -0.38318354, z: 0}
-      rotation: {x: -0.033857808, y: -0.121337205, z: -0.0019167522, w: 0.99203193}
+      rotation: {x: -0.08062107, y: -0.117783725, z: -0.0038844533, w: 0.9897536}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_LeftToeBase
       parentName: CY_LeftFoot
@@ -376,17 +375,17 @@ ModelImporter:
     - name: CY_RightUpLeg
       parentName: CY_Hips
       position: {x: 0.101355396, y: 0, z: 0}
-      rotation: {x: 0.04902595, y: -0.033816442, z: -0.008326847, w: 0.99819016}
+      rotation: {x: 0.026467407, y: -0.0025965373, z: -0.038905624, w: 0.9988889}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_RightLeg
       parentName: CY_RightUpLeg
       position: {x: -0, y: -0.48397723, z: 0}
-      rotation: {x: -0.012684609, y: -0.019341405, z: -0.008540554, w: 0.999696}
+      rotation: {x: -0.0056662285, y: -0.012786073, z: -0.021945179, w: 0.9996614}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_RightFoot
       parentName: CY_RightLeg
       position: {x: -0, y: -0.38318354, z: 0}
-      rotation: {x: 0.002845942, y: 0.11515196, z: -0.029991502, w: 0.99289095}
+      rotation: {x: -0.026978614, y: 0.09109066, z: 0.0015638676, w: 0.9954759}
       scale: {x: 1, y: 1, z: 1}
     - name: CY_RightToeBase
       parentName: CY_RightFoot

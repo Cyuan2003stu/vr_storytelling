@@ -40,8 +40,8 @@ ModelImporter:
       name: S3-1 friend1_009
       takeName: Take 001
       internalID: 1827226128182048838
-      firstFrame: 0
-      lastFrame: 1050
+      firstFrame: 147
+      lastFrame: 883
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
