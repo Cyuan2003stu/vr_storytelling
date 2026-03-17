@@ -16,5 +16,9 @@ public class ZoneTrigger : MonoBehaviour
         triggered = true;
         GameEvents.TriggerInteractionComplete(zoneID);
         Debug.Log($"[ZoneTrigger] {zoneID} 触发");
+
+        // 重新开启所有 Renderer
+        foreach (var r in GetComponentsInChildren<Renderer>())
+            r.enabled = true;
     }
 }

@@ -64,8 +64,7 @@ public class PlacementZone : MonoBehaviour
         Debug.Log($"[PlacementZone] {acceptObjectID} Îü¸½³É¹¦");
         GameEvents.TriggerInteractionComplete(zoneID);
 
-        foreach (var r in GetComponentsInChildren<Renderer>())
-            r.enabled = false;
+      
     }
 
     void OnDrawGizmos()
