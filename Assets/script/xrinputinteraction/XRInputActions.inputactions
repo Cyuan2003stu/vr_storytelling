@@ -1,0 +1,63 @@
+{
+    "version": 1,
+    "name": "XRInputActions",
+    "maps": [
+        {
+            "name": "primarybutton",
+            "id": "54e1bda4-bc9e-4984-a95a-0f42e9d27254",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "1e007f6b-3131-41c0-9f63-4c1f4dea81a3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2e851a18-16d6-46a5-a44d-a765d7d060f4",
+                    "path": "<QuestTouchPlusController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "grip",
+            "id": "27028b0a-e1e8-4b08-9800-37d7a1c17bde",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Value",
+                    "id": "bd58a97a-5c43-46f5-9feb-f04733a6e75a",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c851e785-2e9d-4540-836f-f0a379f05105",
+                    "path": "<QuestProTouchController>/grip",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
