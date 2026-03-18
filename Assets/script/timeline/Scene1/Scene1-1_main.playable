@@ -17,7 +17,7 @@ MonoBehaviour:
   - {fileID: 8363902825362459525}
   - {fileID: 7856832604859864642}
   - {fileID: 4630369963413586143}
-  m_FixedDuration: 31.883333333333333
+  m_FixedDuration: 20.433333333333334
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1
@@ -179,7 +179,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.1
+        value: 3
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -187,10 +187,10 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 18.016666
+        time: 16.983334
         value: 2
-        inSlope: -0.020168047
-        outSlope: -0.020168047
+        inSlope: -0.1512605
+        outSlope: -0.1512605
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
@@ -257,7 +257,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 2.1
+        value: 3
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -265,10 +265,10 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 18.016666
+        time: 16.983334
         value: 2
-        inSlope: -0.020168047
-        outSlope: -0.020168047
+        inSlope: -0.1512605
+        outSlope: -0.1512605
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
