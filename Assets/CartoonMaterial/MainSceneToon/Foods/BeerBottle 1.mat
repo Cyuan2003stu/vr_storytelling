@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: InteractItems 1
+  m_Name: BeerBottle 1
   m_Shader: {fileID: 4800000, guid: 32f285866bcb78a4588e71837abf871e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -129,9 +129,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _ASEOutlineWidth: 0
-    - _AdaptiveThicnkess: 0
+    - _AdaptiveThicnkess: 0.06
     - _AdditionalLightsAmount: 1
-    - _AdditionalLightsFaloff: 0.5
+    - _AdditionalLightsFaloff: 0.2
     - _AdditionalLightsIntesity: 1
     - _AdditionalLightsSmoothnessMultiplier: 1
     - _AlphaClip: 0
@@ -175,9 +175,9 @@ Material:
     - _Metallic: 0
     - _NormalMapStrength: 1
     - _OcclusionStrength: 1
-    - _OutlineDynamicSpeed: 0
+    - _OutlineDynamicSpeed: 0.046
     - _OutlineNoiseIntesity: 1
-    - _OutlineNoiseScale: 10
+    - _OutlineNoiseScale: 5
     - _OutlineTextureStrength: 0
     - _OutlineType: 0
     - _OverlayMode: 2
@@ -215,7 +215,7 @@ Material:
     - _StepOffset: 0.014
     - _Strength: 0
     - _Surface: 0
-    - _Thicnkess: 0.0142
+    - _Thicnkess: 0.035
     - _UVAnimationSpeed: 0
     - _UVAnimationSpeedSpec: 0
     - _UVAnimationSpeedWarp: 0
@@ -255,15 +255,15 @@ Material:
     m_Colors:
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.88595223, g: 1, b: 0.6839622, a: 1}
     - _EmissionColor: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 1}
     - _HalftoneColor: {r: 0, g: 0, b: 0, a: 1}
     - _HatchingColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 0.3921569, g: 0.3921569, b: 0.3921569, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlineColor: {r: 1, g: 0.77802444, b: 0.41037738, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 0}
     - _RimShadowColor: {r: 0, g: 0.055514283, b: 0.9622641, a: 0}
-    - _ShadowColor: {r: 0, g: 0.42352942, b: 0.30918556, a: 1}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadowColorMy: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor1: {r: 1, g: 1, b: 1, a: 0}

@@ -255,7 +255,7 @@ Material:
     m_Colors:
     - _ASEOutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.08499465, g: 0.09433961, b: 0.09433961, a: 1}
+    - _Color: {r: 0.70647913, g: 0.7924528, b: 0.7924528, a: 1}
     - _EmissionColor: {r: 0.05660379, g: 0.05660379, b: 0.05660379, a: 1}
     - _HalftoneColor: {r: 0, g: 0, b: 0, a: 1}
     - _HatchingColor: {r: 0, g: 0, b: 0, a: 1}
@@ -263,7 +263,7 @@ Material:
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _RimColor: {r: 1, g: 1, b: 1, a: 0}
     - _RimShadowColor: {r: 0, g: 0.055514283, b: 0.9622641, a: 0}
-    - _ShadowColor: {r: 0.5660378, g: 0.045389827, b: 0.045389827, a: 1}
+    - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadowColorMy: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecColor1: {r: 1, g: 1, b: 1, a: 0}

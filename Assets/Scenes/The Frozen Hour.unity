@@ -3559,7 +3559,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a2477dd61c0110d47b1d659fbdd959e0, type: 2}
+      objectReference: {fileID: 2100000, guid: b8092d4e09345c94bb51f4bc5575075e, type: 2}
     - target: {fileID: 919132149155446097, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: m_Name
       value: Bottle (4)
@@ -3654,7 +3654,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 4
   m_Range: 8.07
   m_SpotAngle: 48.214035
   m_InnerSpotAngle: 48.214035
@@ -6452,7 +6452,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 4
   m_Range: 9.4
   m_SpotAngle: 35.652634
   m_InnerSpotAngle: 35.65263
@@ -7343,7 +7343,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a2477dd61c0110d47b1d659fbdd959e0, type: 2}
+      objectReference: {fileID: 2100000, guid: ed59e220d26739e42b6b03e3dde23484, type: 2}
     - target: {fileID: 919132149155446097, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: m_Name
       value: Bottle (1)
@@ -8538,6 +8538,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8764293025253011844, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a06a5f5314b9ba4db054166df41b758, type: 2}
     - target: {fileID: -8679921383154817045, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0006845442
@@ -8590,10 +8594,54 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7446875988545755201, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50903ce3120163949920eb127fef85ae, type: 2}
+    - target: {fileID: -6715501480923845001, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 9a06a5f5314b9ba4db054166df41b758, type: 2}
+    - target: {fileID: -6409945826099663981, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef016f5551d35aa4191d6dbb7461847e, type: 2}
+    - target: {fileID: -4198602655287180726, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 50903ce3120163949920eb127fef85ae, type: 2}
+    - target: {fileID: -2881354664861612705, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eba928fdf2798d44a9d9e6deb369e8b4, type: 2}
     - target: {fileID: 919132149155446097, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
       propertyPath: m_Name
       value: Balloons groups
       objectReference: {fileID: 0}
+    - target: {fileID: 1600313079026327645, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 65cde455759898047ba7ab7ed7a5f6fa, type: 2}
+    - target: {fileID: 3203175525192702168, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b5a5afda3bfb6d4aa5e2f9e6c84eb69, type: 2}
+    - target: {fileID: 3314975728018855143, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 0b5a5afda3bfb6d4aa5e2f9e6c84eb69, type: 2}
+    - target: {fileID: 3519694383070599569, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ef016f5551d35aa4191d6dbb7461847e, type: 2}
+    - target: {fileID: 5966690240249964343, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a34e97b40836cc4da2467364db52ab1, type: 2}
+    - target: {fileID: 8442101619611865067, guid: 94608f9b5074f0d4bb38923ddb25563c, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: eba928fdf2798d44a9d9e6deb369e8b4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9042,7 +9090,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 4
   m_Range: 8.07
   m_SpotAngle: 52.757896
   m_InnerSpotAngle: 52.757896
@@ -9777,7 +9825,7 @@ PrefabInstance:
     - target: {fileID: -8701033211160864330, guid: d0a4c8704bee0bf4db14d3675271c2c1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4649c309b0ade499b5c006e27e84e7, type: 2}
+      objectReference: {fileID: 2100000, guid: 1c743117a720c59488a88606e07fb2b0, type: 2}
     - target: {fileID: -8679921383154817045, guid: d0a4c8704bee0bf4db14d3675271c2c1, type: 3}
       propertyPath: m_LocalScale.x
       value: -0.011460461
@@ -9865,15 +9913,15 @@ PrefabInstance:
     - target: {fileID: 3343355002512602971, guid: d0a4c8704bee0bf4db14d3675271c2c1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 1b4649c309b0ade499b5c006e27e84e7, type: 2}
+      objectReference: {fileID: 2100000, guid: 1c743117a720c59488a88606e07fb2b0, type: 2}
     - target: {fileID: 3343355002512602971, guid: d0a4c8704bee0bf4db14d3675271c2c1, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
-      objectReference: {fileID: 2100000, guid: b9b71d85a8e47b64aad56f258a753932, type: 2}
+      objectReference: {fileID: 2100000, guid: 5965f2bc4991327468f24912afaa6a6b, type: 2}
     - target: {fileID: 4050501923663212296, guid: d0a4c8704bee0bf4db14d3675271c2c1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: b9b71d85a8e47b64aad56f258a753932, type: 2}
+      objectReference: {fileID: 2100000, guid: 5965f2bc4991327468f24912afaa6a6b, type: 2}
     - target: {fileID: 4869366934487230650, guid: d0a4c8704bee0bf4db14d3675271c2c1, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -11193,7 +11241,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a2477dd61c0110d47b1d659fbdd959e0, type: 2}
+      objectReference: {fileID: 2100000, guid: 4971a64963a58c1429274dd39beb0a8f, type: 2}
     - target: {fileID: 919132149155446097, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: m_Name
       value: Bottle (5)
@@ -12239,7 +12287,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 4
   m_Range: 5.34
   m_SpotAngle: 48.989475
   m_InnerSpotAngle: 48.989475
@@ -14037,6 +14085,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1064392886}
     m_Modifications:
+    - target: {fileID: 1298735930903374223, guid: 6098c374634e38e4c84528953f4a7f06, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e083e4c0459f3ff4081545a5e15b3e7c, type: 2}
     - target: {fileID: 1298735930905638735, guid: 6098c374634e38e4c84528953f4a7f06, type: 3}
       propertyPath: m_Name
       value: Lamp_03
@@ -14306,7 +14358,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 54b014d503e890b45a84d75cd2362738, type: 2}
+  - {fileID: 2100000, guid: 528b86c35477ee8469cf5cfde6555e6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15725,7 +15777,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a2477dd61c0110d47b1d659fbdd959e0, type: 2}
+      objectReference: {fileID: 2100000, guid: 2a89c1f61ea889d42837051a722e59e2, type: 2}
     - target: {fileID: 919132149155446097, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: m_Name
       value: Bottle (2)
@@ -16056,6 +16108,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 929421448}
     m_Modifications:
+    - target: {fileID: 7354934953745789623, guid: 371354e17b639af4caf17e3bfb0ce353, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: e083e4c0459f3ff4081545a5e15b3e7c, type: 2}
     - target: {fileID: 7354934953747558487, guid: 371354e17b639af4caf17e3bfb0ce353, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.8662858
@@ -17788,7 +17844,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 4
   m_Range: 10
   m_SpotAngle: 37
   m_InnerSpotAngle: 37
@@ -17917,7 +17973,7 @@ Light:
   serializedVersion: 11
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
+  m_Intensity: 4
   m_Range: 6.97
   m_SpotAngle: 39.988983
   m_InnerSpotAngle: 39.988983
@@ -20253,7 +20309,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a2477dd61c0110d47b1d659fbdd959e0, type: 2}
+      objectReference: {fileID: 2100000, guid: 4971a64963a58c1429274dd39beb0a8f, type: 2}
     - target: {fileID: 919132149155446097, guid: 5f343d17c8f12d047838c9dadc7bbbea, type: 3}
       propertyPath: m_Name
       value: Bottle (3)
@@ -21094,7 +21150,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1833810152192036645, guid: fcfb527c67323494b92f984431c89599, type: 3}
+  - {fileID: 2100000, guid: 782821faa28944e4393f6abca8993347, type: 2}
   - {fileID: 5561349426305759274, guid: fcfb527c67323494b92f984431c89599, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -21308,7 +21364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &2139858576
 Light:
   m_ObjectHideFlags: 0
@@ -21320,7 +21376,7 @@ Light:
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 4
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
