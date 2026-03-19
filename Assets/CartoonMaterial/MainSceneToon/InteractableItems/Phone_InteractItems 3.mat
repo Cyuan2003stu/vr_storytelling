@@ -216,7 +216,7 @@ Material:
     - _StepOffset: 0.014
     - _Strength: 0
     - _Surface: 0
-    - _Thicnkess: 0.0008
+    - _Thicnkess: 0.001
     - _UVAnimationSpeed: 0
     - _UVAnimationSpeedSpec: 0
     - _UVAnimationSpeedWarp: 0

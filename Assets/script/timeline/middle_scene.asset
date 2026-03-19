@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: middle_scene
   m_EditorClassIdentifier: 
   timeline: {fileID: 11400000, guid: 1ac65d2f85aa93e4a9354bd8679b6b7f, type: 2}
-  completionType: 2
+  completionType: 0
   autoPlayNext: 0
   interactableID: 
   triggerZoneID: trigger_zone_middle
