@@ -1,24 +1,28 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class PlacementZone : MonoBehaviour
 {
-    [Header("ÇøÓòÉèÖÃ")]
+    [Header("åŒºåŸŸè®¾ç½®")]
     public string zoneID;
     public string acceptObjectID;
     public float snapDistance = 0.2f;
 
-    [Header("Îü¸½ÉèÖÃ")]
-    public bool lockAfterSnap = true;
+    [Header("æ›¿æ¢è®¾ç½®")]
+    public GameObject zoneVisual;
+
+    [Header("å¯¹é½è®¾ç½®")]
+    public bool matchPosition = true;   // å¯¹é½ä½ç½®
+    public bool matchRotation = true;   // å¯¹é½æ—‹è½¬
+    public bool matchScale = true;      // å¯¹é½å¤§å°
 
     private bool isOccupied = false;
-    public bool IsOccupied => isOccupied; // ¡û Íâ²¿¿ÉÒÔ²éÑ¯
+    public bool IsOccupied => isOccupied;
 
     void Start()
     {
         InteractableRegistry.Register(zoneID, gameObject);
-        Debug.Log($"[PlacementZone] ×¢²áÇøÓòID: {zoneID}");
+        Debug.Log($"[PlacementZone] æ³¨å†ŒåŒºåŸŸID: {zoneID}");
     }
 
     void Update()
@@ -42,29 +46,36 @@ public class PlacementZone : MonoBehaviour
     {
         isOccupied = true;
 
-        obj.transform.position = transform.position;
-        obj.transform.rotation = transform.rotation;
-        obj.transform.localScale = transform.localScale;
+        // å¯¹é½ä½ç½®æ—‹è½¬å¤§å°
+        if (matchPosition) obj.transform.position = transform.position;
+        if (matchRotation) obj.transform.rotation = transform.rotation;
+        if (matchScale) obj.transform.localScale = transform.localScale;
 
+        // å†»ç»“ç‰©ç†
         var rb = obj.GetComponent<Rigidbody>();
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
-            if (lockAfterSnap) rb.isKinematic = true;
+            rb.isKinematic = true;
         }
 
-        if (lockAfterSnap)
+        // ä¸ disable ç‰©ä½“ï¼Œåªéšè— Zone è§†è§‰
+        if (zoneVisual != null)
+            zoneVisual.SetActive(false);
+        else
         {
-            var interactable = obj.GetComponent<XRBaseInteractable>();
-            if (interactable != null)
-                interactable.enabled = false;
+            var zoneRenderer = GetComponent<Renderer>();
+            if (zoneRenderer != null)
+                zoneRenderer.enabled = false;
         }
 
-        Debug.Log($"[PlacementZone] {acceptObjectID} Îü¸½³É¹¦");
-        GameEvents.TriggerInteractionComplete(zoneID);
+        // å…³æ‰ Collider é˜²æ­¢é‡å¤æ£€æµ‹
+        var col = GetComponent<Collider>();
+        if (col != null) col.enabled = false;
 
-      
+        Debug.Log($"[PlacementZone] {acceptObjectID} å¸é™„æˆåŠŸ");
+        GameEvents.TriggerInteractionComplete(zoneID);
     }
 
     void OnDrawGizmos()
