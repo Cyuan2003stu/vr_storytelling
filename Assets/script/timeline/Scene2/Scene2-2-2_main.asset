@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00d2d4f632b6e0b4e9ccda1483462d76, type: 3}
-  m_Name: Scene2_clock
+  m_Name: Scene2-2-2_main
   m_EditorClassIdentifier: 
-  timeline: {fileID: 11400000, guid: ef343090c3f122d4e9c0cda070de5aa0, type: 2}
-  completionType: 1
-  interactableID: aBottleOfBeer
+  timeline: {fileID: 11400000, guid: 36c6c786832826e468fe112cb300be99, type: 2}
+  completionType: 0
+  autoPlayNext: 0
+  interactableID: 
   triggerZoneID: 
   placementZoneID: 
+  customTriggerID: 

@@ -39,7 +39,7 @@ ModelImporter:
       name: S2-2-1 neighbour_003
       takeName: S2-2 neighbour_003
       internalID: -2527484941793657423
-      firstFrame: 1735
+      firstFrame: 2321
       lastFrame: 4012
       wrapMode: 0
       orientationOffsetY: 0
@@ -47,7 +47,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

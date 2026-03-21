@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00d2d4f632b6e0b4e9ccda1483462d76, type: 3}
-  m_Name: Scene1_main
+  m_Name: Scene2-2-3
   m_EditorClassIdentifier: 
-  timeline: {fileID: 11400000, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
-  completionType: 4
-  autoPlayNext: 1
+  timeline: {fileID: 11400000, guid: 04f044229d529d244852bbf7825fdcce, type: 2}
+  completionType: 0
+  autoPlayNext: 0
   interactableID: 
   triggerZoneID: 
   placementZoneID: 
-  customTriggerID: calendar_complete
+  customTriggerID: 
