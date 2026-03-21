@@ -42,7 +42,7 @@ MonoBehaviour:
     m_Start: 8.233333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 3110154607439642997}
-    m_Duration: 9.75
+    m_Duration: 10.783333333333333
     m_TimeScale: 1
     m_ParentTrack: {fileID: -8798179735117457862}
     m_EaseInDuration: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
   - {fileID: -2311001698052848998}
   - {fileID: 2705754331118024382}
   - {fileID: 7018313393046881617}
-  m_FixedDuration: 18.1
+  m_FixedDuration: 19.016666666666666
   m_EditorSettings:
     m_Framerate: 60
     m_ScenePreview: 1

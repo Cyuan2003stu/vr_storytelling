@@ -18,8 +18,10 @@ public class TimelineManager : MonoBehaviour
         PlayableDirector target = null;
         var allDirectors = FindObjectsOfType<PlayableDirector>();
 
+        Debug.Log($"[TimelineManager] 场景里共有 {allDirectors.Length} 个Director");
         foreach (var d in allDirectors)
         {
+            Debug.Log($"[TimelineManager] 找到Director: {d.gameObject.name}, Asset: {d.playableAsset?.name}");
             if (d != null && d.playableAsset == timeline)
             {
                 target = d;
@@ -36,7 +38,6 @@ public class TimelineManager : MonoBehaviour
 
         Debug.Log($"[TimelineManager] 开始播放: {timeline.name}, duration: {target.duration}");
 
-        // 重置触发器
         var trigger = target.GetComponent<TimelineTrigger>();
         if (trigger != null)
             trigger.ResetTriggers();
