@@ -16,6 +16,11 @@ public class Door : XRBaseInteractable
     [Header("初始状态")]
     public bool isLocked = false;
 
+    [Header("触发设置")]
+    public float triggerAngle = -45f;        // 超过多少度触发
+    public string triggerID = "door_opened"; // 触发的 ID
+    private bool triggered = false;          // 只触发一次
+
     private bool isGrabbed = false;
     private IXRSelectInteractor currentInteractor;
     private float currentAngle = 0f;
@@ -24,13 +29,13 @@ public class Door : XRBaseInteractable
     public void UnlockDoor()
     {
         isLocked = false;
-        Debug.Log("[FridgeDoor] 解锁，可以开门");
+        Debug.Log("[Door] 解锁，可以开门");
     }
 
     public void LockDoor()
     {
         isLocked = true;
-        Debug.Log("[FridgeDoor] 锁定，不能开门");
+        Debug.Log("[Door] 锁定，不能开门");
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
@@ -60,22 +65,23 @@ public class Door : XRBaseInteractable
             float handAngle = GetAngleFromPivot(handPos);
             float targetAngle = handAngle + grabAngleOffset;
             currentAngle = Mathf.Clamp(targetAngle, minAngle, maxAngle);
-
-            // Y 轴旋转
             pivotPoint.localRotation = Quaternion.Euler(0, currentAngle, 0);
+
+            // 实时显示当前角度
+            Debug.Log($"[Door] 当前角度: {currentAngle}");
         }
 
-        if (drawer != null)
+        if (!triggered && currentAngle >= triggerAngle)
         {
-            float t = Mathf.InverseLerp(maxAngle, minAngle, currentAngle);
-            drawer.currentMaxDistance = Mathf.Lerp(-0.15f, 0.3f, t);
+            triggered = true;
+            Debug.Log($"[Door] 触发！角度: {currentAngle}");
+            CustomTrigger.FireID(triggerID);
         }
     }
 
     float GetAngleFromPivot(Vector3 position)
     {
         Vector3 direction = position - pivotPoint.position;
-        // Y 轴旋转用 X 和 Z 计算角度
         return Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
     }
 }
