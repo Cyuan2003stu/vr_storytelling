@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00d2d4f632b6e0b4e9ccda1483462d76, type: 3}
-  m_Name: Scene2-2_main
+  m_Name: Scene2-2_1main
   m_EditorClassIdentifier: 
   timeline: {fileID: 11400000, guid: 492f4509f9dd66c41b9b7a12c4e94486, type: 2}
   completionType: 0
