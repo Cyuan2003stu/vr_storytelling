@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeline: {fileID: 11400000, guid: e56c2fbd0eb57a74a80e424414f4e4f7, type: 2}
   completionType: 1
-  autoPlayNext: 0
+  autoPlayNext: 1
   interactableID: pickup_phone
   triggerZoneID: 
   placementZoneID: 

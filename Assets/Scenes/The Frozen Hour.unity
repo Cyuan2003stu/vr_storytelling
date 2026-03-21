@@ -2883,6 +2883,7 @@ GameObject:
   - component: {fileID: 119528033}
   - component: {fileID: 119528032}
   - component: {fileID: 119528031}
+  - component: {fileID: 119528036}
   m_Layer: 0
   m_Name: calendar_03
   m_TagString: Untagged
@@ -3129,6 +3130,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119528029}
   m_Mesh: {fileID: 5874212276231880419, guid: 549e577a0c256b341b2d4b86787e2e6c, type: 3}
+--- !u!95 &119528036
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119528029}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!65 &145854255
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3268,6 +3291,7 @@ GameObject:
   - component: {fileID: 160038623}
   - component: {fileID: 160038622}
   - component: {fileID: 160038621}
+  - component: {fileID: 160038626}
   m_Layer: 0
   m_Name: calendar_01
   m_TagString: Untagged
@@ -3514,6 +3538,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160038619}
   m_Mesh: {fileID: -1349390365674179147, guid: 549e577a0c256b341b2d4b86787e2e6c, type: 3}
+--- !u!95 &160038626
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160038619}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &161307851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10815,6 +10861,7 @@ GameObject:
   - component: {fileID: 869017585}
   - component: {fileID: 869017584}
   - component: {fileID: 869017583}
+  - component: {fileID: 869017588}
   m_Layer: 0
   m_Name: calendar_07
   m_TagString: Untagged
@@ -11061,6 +11108,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 869017581}
   m_Mesh: {fileID: -2996342075657039026, guid: 549e577a0c256b341b2d4b86787e2e6c, type: 3}
+--- !u!95 &869017588
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869017581}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &898170251
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12210,9 +12279,9 @@ MonoBehaviour:
     m_Events:
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 971743830}
-          m_TargetAssemblyTypeName: ScriptController, Assembly-CSharp
-          m_MethodName: 
+        - m_Target: {fileID: 2127622827}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12540,6 +12609,7 @@ GameObject:
   - component: {fileID: 998574430}
   - component: {fileID: 998574429}
   - component: {fileID: 998574428}
+  - component: {fileID: 998574433}
   m_Layer: 0
   m_Name: calendar_02
   m_TagString: Untagged
@@ -12786,6 +12856,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 998574426}
   m_Mesh: {fileID: -4460713238348096160, guid: 549e577a0c256b341b2d4b86787e2e6c, type: 3}
+--- !u!95 &998574433
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 998574426}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1015274382
 GameObject:
   m_ObjectHideFlags: 0
@@ -15336,6 +15428,16 @@ PlayableDirector:
     value: {fileID: 701223323}
   - key: {fileID: -8798179735117457862, guid: 492f4509f9dd66c41b9b7a12c4e94486, type: 2}
     value: {fileID: 1064562250}
+  - key: {fileID: 1782937357758165058, guid: 492f4509f9dd66c41b9b7a12c4e94486, type: 2}
+    value: {fileID: 201672137}
+  - key: {fileID: 3109858454380885116, guid: 492f4509f9dd66c41b9b7a12c4e94486, type: 2}
+    value: {fileID: 759523586}
+  - key: {fileID: -2311001698052848998, guid: 492f4509f9dd66c41b9b7a12c4e94486, type: 2}
+    value: {fileID: 187956592}
+  - key: {fileID: 2705754331118024382, guid: 492f4509f9dd66c41b9b7a12c4e94486, type: 2}
+    value: {fileID: 242048346}
+  - key: {fileID: 7018313393046881617, guid: 492f4509f9dd66c41b9b7a12c4e94486, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1268240564
@@ -15648,6 +15750,7 @@ MonoBehaviour:
   zoneID: shoe_slot
   acceptObjectID: shoe
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 0}
   matchPosition: 1
   matchRotation: 1
@@ -16380,6 +16483,7 @@ GameObject:
   - component: {fileID: 1438542924}
   - component: {fileID: 1438542923}
   - component: {fileID: 1438542922}
+  - component: {fileID: 1438542927}
   m_Layer: 0
   m_Name: calendar_04
   m_TagString: Untagged
@@ -16626,6 +16730,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1438542920}
   m_Mesh: {fileID: 8900378986252533066, guid: 549e577a0c256b341b2d4b86787e2e6c, type: 3}
+--- !u!95 &1438542927
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1438542920}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1455940895
 GameObject:
   m_ObjectHideFlags: 0
@@ -16700,6 +16826,20 @@ PlayableDirector:
     value: {fileID: 2127019449}
   - key: {fileID: -431699011450107559, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
     value: {fileID: 1725287667}
+  - key: {fileID: -2542396687073348368, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
+    value: {fileID: 160038626}
+  - key: {fileID: -7533563260773475329, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
+    value: {fileID: 998574433}
+  - key: {fileID: -4636836308802391033, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
+    value: {fileID: 119528036}
+  - key: {fileID: -1263597646787173326, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
+    value: {fileID: 1438542927}
+  - key: {fileID: -1043229565464175930, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
+    value: {fileID: 1863038662}
+  - key: {fileID: -4401334536478604694, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
+    value: {fileID: 1800076696}
+  - key: {fileID: 8764033672126776570, guid: c80007d3e9a2c8a4d86809f01250b113, type: 2}
+    value: {fileID: 869017588}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1455940898
@@ -18095,6 +18235,7 @@ MonoBehaviour:
   zoneID: phone_slot
   acceptObjectID: phone
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 0}
   matchPosition: 1
   matchRotation: 1
@@ -19305,6 +19446,7 @@ GameObject:
   - component: {fileID: 1800076693}
   - component: {fileID: 1800076692}
   - component: {fileID: 1800076691}
+  - component: {fileID: 1800076696}
   m_Layer: 0
   m_Name: calendar_06
   m_TagString: Untagged
@@ -19551,6 +19693,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800076689}
   m_Mesh: {fileID: 921166217734883230, guid: 549e577a0c256b341b2d4b86787e2e6c, type: 3}
+--- !u!95 &1800076696
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800076689}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1803828041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19714,6 +19878,20 @@ PlayableDirector:
     value: {fileID: 1082903496}
   - key: {fileID: 8355191267082098279, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
     value: {fileID: 1015274390}
+  - key: {fileID: 1153912402063304945, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
+    value: {fileID: 160038626}
+  - key: {fileID: 6376212202504030047, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
+    value: {fileID: 998574433}
+  - key: {fileID: -2587718454311093762, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
+    value: {fileID: 119528036}
+  - key: {fileID: -2648653142522234515, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
+    value: {fileID: 1438542927}
+  - key: {fileID: -7612609816570557456, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
+    value: {fileID: 1863038662}
+  - key: {fileID: 6121140826010641065, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
+    value: {fileID: 1800076696}
+  - key: {fileID: -6403126456966854770, guid: 8e2f84fe508771a45b0721ed0ae38deb, type: 2}
+    value: {fileID: 869017588}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1830530533
@@ -19852,6 +20030,7 @@ MonoBehaviour:
   zoneID: aBottleOfBeer_slot
   acceptObjectID: aBottleOfBeer
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 0}
   matchPosition: 1
   matchRotation: 1
@@ -20061,6 +20240,7 @@ GameObject:
   - component: {fileID: 1863038659}
   - component: {fileID: 1863038658}
   - component: {fileID: 1863038657}
+  - component: {fileID: 1863038662}
   m_Layer: 0
   m_Name: calendar_05
   m_TagString: Untagged
@@ -20077,7 +20257,7 @@ Transform:
   m_GameObject: {fileID: 1863038655}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.37723994, z: -0, w: 0.9261156}
-  m_LocalPosition: {x: -0.00592, y: 0.0057, z: -0.0116}
+  m_LocalPosition: {x: -0.005920001, y: 0.0056999982, z: -0.011599996}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20307,6 +20487,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1863038655}
   m_Mesh: {fileID: 9203576617109488666, guid: 549e577a0c256b341b2d4b86787e2e6c, type: 3}
+--- !u!95 &1863038662
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1863038655}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1880269704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21802,6 +22004,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127622824}
+  - component: {fileID: 2127622827}
   - component: {fileID: 2127622825}
   - component: {fileID: 2127622826}
   m_Layer: 0
@@ -21837,7 +22040,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: d65aa93d6d7fe3446881a22ea4c289d7, type: 3}
+  m_Resource: {fileID: 8300000, guid: 0235091bffd695e42810d5a0e34fbb36, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -21937,37 +22140,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Events:
     m_Signals:
-    - {fileID: 11400000, guid: 49dc590bcabf5754e8cada03635aa50e, type: 2}
+    - {fileID: 0}
     - {fileID: 11400000, guid: fba1d3a362013ff42a63d77b3675e545, type: 2}
     m_Events:
     - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 971743830}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: 
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
     - m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 971743830}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: 
+        - m_Target: {fileID: 2127622827}
+          m_TargetAssemblyTypeName: AudioController, Assembly-CSharp
+          m_MethodName: Play
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: 
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2127622827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127622823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6adc05346104d524b885b8be46ee1cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 2127622825}
 --- !u!1 &2139858575
 GameObject:
   m_ObjectHideFlags: 0
@@ -22609,6 +22813,7 @@ MonoBehaviour:
   zoneID: calendar_zone_07
   acceptObjectID: calendar_07
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 2060794577344936261}
   matchPosition: 1
   matchRotation: 1
@@ -23366,6 +23571,7 @@ MonoBehaviour:
   zoneID: calendar_zone_03
   acceptObjectID: calendar_03
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 1601051028036109525}
   matchPosition: 1
   matchRotation: 1
@@ -23800,6 +24006,7 @@ MonoBehaviour:
   zoneID: calendar_zone_04
   acceptObjectID: calendar_04
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 6683650465372172617}
   matchPosition: 1
   matchRotation: 1
@@ -23855,6 +24062,7 @@ MonoBehaviour:
   zoneID: calendar_zone_02
   acceptObjectID: calendar_02
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 4430500727488115667}
   matchPosition: 1
   matchRotation: 1
@@ -24014,6 +24222,7 @@ MonoBehaviour:
   zoneID: calendar_zone_06
   acceptObjectID: calendar_06
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 5218782355536293288}
   matchPosition: 1
   matchRotation: 1
@@ -24119,6 +24328,7 @@ MonoBehaviour:
   zoneID: calendar_zone_05
   acceptObjectID: calendar_05
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 375527686905295883}
   matchPosition: 1
   matchRotation: 1
@@ -24212,6 +24422,7 @@ MonoBehaviour:
   zoneID: calendar_zone_01
   acceptObjectID: calendar_01
   snapDistance: 0.2
+  lockAfterSnap: 1
   zoneVisual: {fileID: 8677538628231855553}
   matchPosition: 1
   matchRotation: 1

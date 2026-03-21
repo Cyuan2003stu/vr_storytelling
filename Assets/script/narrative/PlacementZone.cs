@@ -8,13 +8,16 @@ public class PlacementZone : MonoBehaviour
     public string acceptObjectID;
     public float snapDistance = 0.2f;
 
+    [Header("吸附设置")]
+    public bool lockAfterSnap = true;   // ← 勾选锁定，不勾选可以再拿走
+
     [Header("替换设置")]
     public GameObject zoneVisual;
 
     [Header("对齐设置")]
-    public bool matchPosition = true;   // 对齐位置
-    public bool matchRotation = true;   // 对齐旋转
-    public bool matchScale = true;      // 对齐大小
+    public bool matchPosition = true;
+    public bool matchRotation = true;
+    public bool matchScale = true;
 
     private bool isOccupied = false;
     public bool IsOccupied => isOccupied;
@@ -46,12 +49,10 @@ public class PlacementZone : MonoBehaviour
     {
         isOccupied = true;
 
-        // 对齐位置旋转大小
         if (matchPosition) obj.transform.position = transform.position;
         if (matchRotation) obj.transform.rotation = transform.rotation;
         if (matchScale) obj.transform.localScale = transform.localScale;
 
-        // 冻结物理
         var rb = obj.GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -60,7 +61,17 @@ public class PlacementZone : MonoBehaviour
             rb.isKinematic = true;
         }
 
-        // 不 disable 物体，只隐藏 Zone 视觉
+        // 根据 lockAfterSnap 决定是否锁定抓取
+        if (lockAfterSnap)
+        {
+            var interactable = obj.GetComponent<XRBaseInteractable>();
+            if (interactable != null)
+            {
+                interactable.enabled = false;
+                Debug.Log($"[PlacementZone] {acceptObjectID} 已锁定，不能再拿走");
+            }
+        }
+
         if (zoneVisual != null)
             zoneVisual.SetActive(false);
         else
@@ -70,7 +81,6 @@ public class PlacementZone : MonoBehaviour
                 zoneRenderer.enabled = false;
         }
 
-        // 关掉 Collider 防止重复检测
         var col = GetComponent<Collider>();
         if (col != null) col.enabled = false;
 
