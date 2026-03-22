@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00d2d4f632b6e0b4e9ccda1483462d76, type: 3}
-  m_Name: Scene3-2_main
+  m_Name: 3-2-3
   m_EditorClassIdentifier: 
-  timeline: {fileID: 11400000, guid: d749c5458c58107438f0e8c95305cc01, type: 2}
+  timeline: {fileID: 11400000, guid: 272c0cf81d844d343974e80810e44ed4, type: 2}
   completionType: 3
   autoPlayNext: 0
   interactableID: 
-  triggerZoneID: 
+  triggerZoneID: key_unlock
   placementZoneID: 
   customTriggerID: 
