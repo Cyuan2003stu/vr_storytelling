@@ -67,8 +67,7 @@ public class Door : XRBaseInteractable
             currentAngle = Mathf.Clamp(targetAngle, minAngle, maxAngle);
             pivotPoint.localRotation = Quaternion.Euler(0, currentAngle, 0);
 
-            // 实时显示当前角度
-            Debug.Log($"[Door] 当前角度: {currentAngle}");
+         
         }
 
         if (!triggered && currentAngle >= triggerAngle)
