@@ -3,7 +3,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
-public class Door : XRBaseInteractable
+public class openbox: XRBaseInteractable
 {
     [Header("旋转设置")]
     public Transform pivotPoint;
@@ -69,7 +69,7 @@ public class Door : XRBaseInteractable
         }
 
         // 检查触发条件
-        if (!triggered && currentAngle >= triggerAngle)
+        if (!triggered && currentAngle <= triggerAngle)
         {
             triggered = true;
             Debug.Log($"[Door] 触发！角度: {currentAngle:F1}，触发ID: {triggerID}");
