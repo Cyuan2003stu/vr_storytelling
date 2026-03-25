@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00d2d4f632b6e0b4e9ccda1483462d76, type: 3}
   m_Name: Scene1-1_calendar
   m_EditorClassIdentifier: 
-  timeline: {fileID: 0}
+  timeline: {fileID: 11400000, guid: 9761135b151b0ee41a68bf09b2c76180, type: 2}
   completionType: 0
-  autoPlayNext: 0
+  autoPlayNext: 1
   interactableID: 
   triggerZoneID: 
   placementZoneID: 
