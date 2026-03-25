@@ -21,6 +21,7 @@ Material:
   - _USEDYNAMICOUTLINE_ON
   - _USEHATCHINGCONSTANTSCALE_ON
   - _USELIGHTRAMP_POSTERIZE
+  - _USEOUTLINE_ON
   - _USESCREENUVSSPECULAR_ON
   - _USESCREENUVSWARP_ON
   - _USESCREENUVS_ON
@@ -215,7 +216,7 @@ Material:
     - _StepOffset: 0.014
     - _Strength: 0
     - _Surface: 0
-    - _Thicnkess: 0.0142
+    - _Thicnkess: 0
     - _UVAnimationSpeed: 0
     - _UVAnimationSpeedSpec: 0
     - _UVAnimationSpeedWarp: 0
@@ -237,7 +238,7 @@ Material:
     - _UseEnvironmentRefletion: 0
     - _UseHatchingConstantScale: 1
     - _UseLightRamp: 2
-    - _UseOutline: 0
+    - _UseOutline: 1
     - _UsePureSketch: 0
     - _UseRimLight: 0
     - _UseScreenUvs: 1
@@ -260,7 +261,7 @@ Material:
     - _HalftoneColor: {r: 0, g: 0, b: 0, a: 1}
     - _HatchingColor: {r: 0, g: 0, b: 0, a: 1}
     - _MainColor: {r: 0.3921569, g: 0.3921569, b: 0.3921569, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
+    - _OutlineColor: {r: 0.61720675, g: 0.5394797, b: 0.35640025, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 0}
     - _RimShadowColor: {r: 0, g: 0.055514283, b: 0.9622641, a: 0}
     - _ShadowColor: {r: 0, g: 0, b: 0, a: 1}
