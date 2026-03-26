@@ -8,11 +8,21 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: New Material
-  m_Shader: {fileID: -6465566751694194690, guid: 44245ab89240f51459a5077d7145c452, type: 3}
+  m_Shader: {fileID: 4800000, guid: 32f285866bcb78a4588e71837abf871e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
+  m_ValidKeywords:
+  - _OUTLINETYPE_NORMAL
+  - _OVERLAYMODE1_NONE
+  - _OVERLAYMODE_NONE
+  - _RIMSPLITCOLOR_NOSPLIT
+  - _USEADDITIONALLIGHTSDIFFUSE_ON
+  - _USEHATCHINGCONSTANTSCALE_ON
+  - _USELIGHTRAMP_STEP
+  - _USEPURESKETCH_ON
+  - _USESPECULAR_ON
+  m_InvalidKeywords:
+  - _USESHADOWS_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -232,7 +242,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _StepHalftoneTexture: 0
-    - _StepOffset: 0
+    - _StepOffset: -0.04
     - _Strength: 0
     - _Surface: 0
     - _TRANSPARENCY: 0
@@ -275,16 +285,16 @@ Material:
     m_Colors:
     - _BASE_COLOR: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.61635214, g: 0.6052515, b: 0.52137965, a: 1}
     - _EMISSION_COLOR: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0.125, g: 0.125, b: 0.125, a: 1}
     - _HalftoneColor: {r: 0, g: 0, b: 0, a: 1}
     - _HatchingColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 0}
     - _REFLECTIONS_COLOR: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 0}
     - _RimShadowColor: {r: 0, g: 0.055514283, b: 0.9622641, a: 0}
-    - _ShadowColor: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowColor: {r: 0.8867924, g: 0.8867924, b: 0.14779864, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

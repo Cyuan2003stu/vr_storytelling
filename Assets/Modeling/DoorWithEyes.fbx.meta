@@ -3,7 +3,12 @@ guid: 08f4dabaa28d93c4fb4a384bf543d75a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DoorWithEyes
+    second: {fileID: 2100000, guid: 816df0b6f18849f43ad86ac1bbc7e370, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

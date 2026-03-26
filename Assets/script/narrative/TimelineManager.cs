@@ -16,7 +16,7 @@ public class TimelineManager : MonoBehaviour
     public void Play(TimelineAsset timeline, Action onFinish)
     {
         PlayableDirector target = null;
-        var allDirectors = FindObjectsOfType<PlayableDirector>();
+        var allDirectors = FindObjectsByType<PlayableDirector>(FindObjectsSortMode.None);
 
         Debug.Log($"[TimelineManager] 场景里共有 {allDirectors.Length} 个Director");
         foreach (var d in allDirectors)
