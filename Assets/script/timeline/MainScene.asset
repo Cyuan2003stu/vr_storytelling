@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: MainScene
   m_EditorClassIdentifier: 
   timeline: {fileID: 11400000, guid: c3e214e2d64b18d41be762d8b6d1bd86, type: 2}
-  completionType: 0
-  autoPlayNext: 0
+  completionType: 2
   interactableID: 
-  triggerZoneID: 
+  triggerZoneID: 001
   placementZoneID: 
-  customTriggerID: 
